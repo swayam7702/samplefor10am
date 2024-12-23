@@ -2,3 +2,215 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* .card{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px 20px;
+  width: 300px;
+  margin: 5px;
+
+} */
+
+
+.card{
+  border: 1px solid gray;
+  border-radius: 5px;
+  /* padding: 15px 20px; */
+  width: 300px;
+  margin: 5px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.card h1{
+  font-size: 55px;
+}
+.card .btns-div button{
+  padding: 5px;
+  margin: 3px;
+  cursor: pointer;
+}
+/* h1{
+  font-size: 25px;
+} */
+.parent{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100vh;
+  align-items: center;
+}
+
+.div-error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+.footer{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  background-color: blueviolet;
+  color: #fff;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding:10px 30px ;
+  align-items: center;
+
+
+}
+.nav .links ul{
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.nav .links ul li .link{
+  text-decoration:none ;
+}
+.active{
+  color: orangered;
+  border-bottom: 2px solid orangered;
+  padding-bottom:5px;
+}
+.tmh{
+  border: 1px solid transparent;
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: .6s;
+
+}
+.tmh:hover{
+  border:  1px solid green;
+  background-color: transparent;
+  color: green;
+}
+.info-card{
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 15px;
+  width: fit-content;
+}
+.product-card{
+  width: fit-content;
+  border: 1px solid gray;
+  padding: 15px 30px;
+  margin: 3px;
+  width: 300px;
+  text-align: center;
+}
+.products-parent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+}
+.user-input{
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.user-input input{
+  width: 50%;
+  padding: 10px;
+}
+.lo-nav{
+  height: 70px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+.pn-found{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ui-data{
+  border: 1px solid gray;
+  padding: 5px;
+  background-color: red;
+  color: #fff;
+}
+
+.sec{
+  height: 100vh;
+  /* background-color: orangered; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+
+.container .sec{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.container .sec .sub1-sec{
+  background-color: blueviolet;
+  width: 48%;
+  height: 60vh;
+}
+
+.container .sec .sub2-sec{
+  background-color: rgb(161, 30, 135);
+  width: 48%;
+  height: 60vh;
+
+}
+.spl{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.spl .sub1-sec{
+  height: 25vh;
+}
+
+.spl .sub1-sec{
+  background-color: bisque;
+}
+.spl .sub2-sec{
+  background-color: rgb(229, 134, 19);
+}
+
+.form-parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  justify-content: center;
+}
+
+.box{
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid gray;
+  padding: 20px;
+}

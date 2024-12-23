@@ -97,11 +97,54 @@ import Example from './Components/Example'
 // console.log(companies.length)
 
 
+let detailsForApp = {
+    type:"IOS",
+    price:"Depends On Pages",
+    version:"Latest Version in Market",
+    cate:"We Can Provide Both for Mobile & Tablets"
+};
+
 export let DataContext = createContext()
 
 const App = () => {
   return (
-      <Example/>
+      <>
+
+
+
+     
+      {/* <div className='parent'>
+        {
+          companies.map((company)=>{
+            return(
+              <Information name={company.name} address={company.address} location={company.location[0]} type={company.type}/>
+            )
+          })
+        }
+      </div> */}
+
+       <Navbar/>
+      <DataContext.Provider value={detailsForApp}>
+        <Routes>
+          <Route path='' element={<Home/>}/>
+          <Route path='products' element={<Products/>}/>
+          <Route path='about' element={<About/>}/>
+          <Route path='json' element={<GettingFromJson/>}/>
+          <Route path='age' element={<AgeCaluclate/>}/>
+          <Route path='form' element={<SignupForm/>}/>
+          <Route path='services' element={<Services />}/>
+          <Route path='slider' element={<Responsive/>}/>
+          <Route path='sample' element={<Sample/>}/>
+          <Route path='price' element={<Example/>}/>
+        </Routes>
+      </DataContext.Provider> 
+
+
+
+
+
+
+      </>
 
   )
 
